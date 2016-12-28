@@ -9,7 +9,6 @@ import clean from 'gulp-clean';
 import {main as ngc} from '@angular/compiler-cli/src/main';
 import rollupConfig from './rollup-config';
 
-console.log(ngc);
 
 gulp.task('ngc', ['clear'], (cb) => {
     let args = { _: [], p: 'tsconfig.json' };
